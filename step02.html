@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+    //   var newElement = document.createElement("h1");
+    //   newElement.innerText = "Welcome to the JS + React world";
+
+
+    //   var newElement = React.createElement("h1", {children: 'Welcome to the JS + React world'})
+
+    var newElement = <h1>Welcome to the JS + React world</h1>
+    var newElement2 = <h2>Teste de componente</h2>
+
+      var rootElement = document.getElementById("root");
+
+      ReactDOM.render(newElement2, rootElement)
+
+    //   rootElement.appendChild(newElement);
+    </script>
+  </body>
+</html>
